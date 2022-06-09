@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 function App() {
-    return <h1>Merhaba Dünya!</h1>
+    return <h1 className='display-1'>Merhaba Dünya!</h1>
 }
 
 ReactDOM.render(
