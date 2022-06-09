@@ -1,12 +1,23 @@
-import React from 'react'; 
+import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Card from './components/Card'
 
 function App() {
-    return <h1 className='display-1'>Merhaba Dünya!</h1>
+    return (
+        <div>
+            <div className="card-group">
+                <Card cardTitle="Samsunspor"/>
+
+                <Card cardTitle="Fenerbahçe"/>
+
+                <Card cardTitle="Bucaspor"/>
+            </div>
+        </div>
+    );
 }
 
+
 ReactDOM.render(
-    <App/>,
+    <App />,
     document.getElementById("root")
 );
