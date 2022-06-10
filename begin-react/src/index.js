@@ -25,7 +25,7 @@ function App() {
                 </Collapse>
                 <Collapse collapseID="collapseExample3">
                     <Card 
-                    cardTitle="Bucaspor"
+                    cardTitle="Altay"
                     cardText="Lorem Ipsum III"
                     cardTime="Updated 3 min ago"
                     image="https://picsum.photos/id/100/200/300" 
