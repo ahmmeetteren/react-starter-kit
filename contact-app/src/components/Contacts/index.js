@@ -22,7 +22,7 @@ function Contacts() {
     console.log(contacts);
   }, [contacts]);
   return (
-    <div>
+    <div className="w-25 h-50 d-flex flex-column align-items-center justify-content-center">
       <List contacts={contacts} />
       <Form setContacts={setContacts} contacts={contacts} />
     </div>

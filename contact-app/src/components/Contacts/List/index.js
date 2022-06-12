@@ -12,15 +12,21 @@ function List({ contacts }) {
     );
   });
   return (
-    <div>
+    <div className="w-100">
       <input
         placeholder="Filter contacts"
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
+        className="form-control mb-2"
       ></input>
-      <ul>
+      <ul class="list-group mb-3 mt-3">
         {filtered.map((contact, i) => (
-          <li key={i}>{contact.fullname}</li>
+          <li key={i} class="list-group-item">
+            <div className="d-inline-block">{contact.fullname}</div>
+            <div className="d-inline-block float-end">
+              {contact.phonenumber}
+            </div>
+          </li>
         ))}
       </ul>
     </div>

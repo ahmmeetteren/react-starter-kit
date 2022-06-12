@@ -19,13 +19,14 @@ function Form({ setContacts, contacts }) {
     }
   };
   return (
-    <form>
+    <form className="w-100">
       <div>
         <input
           name="fullname"
           value={form.fullname}
           placeholder="Full Name"
           onChange={onChangeInput}
+          className="form-control mb-2"
         ></input>
       </div>
       <div>
@@ -34,9 +35,12 @@ function Form({ setContacts, contacts }) {
           value={form.phonenumber}
           placeholder="Phone Number"
           onChange={onChangeInput}
+          className="form-control mb-2"
         ></input>
       </div>
-      <button onClick={onSubmit}>Add</button>
+      <button onClick={onSubmit} className="float-end btn btn-primary">
+        Add
+      </button>
     </form>
   );
 }
