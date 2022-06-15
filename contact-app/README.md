@@ -1,1 +1,1 @@
-#Contact App deigned with React
+#Contact App designed with React
