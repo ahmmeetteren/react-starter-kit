@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Search({ searchUser, clearResults, showClearButton }) {
+function Search({ searchUser, clearResults, showClearButton, setAlertMsg }) {
   const [keyword, setKeyword] = useState("");
 
   const handleChange = (e) => {
@@ -8,10 +8,13 @@ function Search({ searchUser, clearResults, showClearButton }) {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    searchUser(keyword);
-    setKeyword("");
+    if (keyword === "") {
+      setAlertMsg("Lütfen bir kelime girin.", "danger");
+    } else {
+      searchUser(keyword);
+      setKeyword("");
+    }
   };
-  console.log(showClearButton);
   return (
     <div className="container my-2">
       <form onSubmit={handleSubmit}>
