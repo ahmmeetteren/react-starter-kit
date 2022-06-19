@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function User({ user }) {
   return (
@@ -7,13 +8,9 @@ function User({ user }) {
         <img src={user.avatar_url} alt="" className="img-fluid" />
         <div className="card-body">
           <p className="card-text">{user.login}</p>
-          <a
-            href={user.html_url}
-            target="_blank"
-            className="btn btn-primary btn-sm"
-          >
+          <Link to={`/user/${user.login}`} className="btn btn-primary btn-sm">
             Profile
-          </a>
+          </Link>
         </div>
       </div>
     </div>
