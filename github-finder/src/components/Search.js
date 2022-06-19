@@ -28,7 +28,7 @@ function Search({ searchUser, clearResults, showClearButton, setAlertMsg }) {
         </div>
       </form>
       {showClearButton && (
-        <button onClick={clearResults} className="btn btn-danger w-100 mt-2">
+        <button onClick={clearResults} className="btn btn-secondary w-100 mt-2">
           Clear Results
         </button>
       )}

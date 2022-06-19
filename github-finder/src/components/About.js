@@ -1,22 +1,23 @@
 import React from "react";
+import github from "../github.svg";
+import "../App.css";
 
 function About() {
   return (
-    <div className="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-      accusantium, debitis incidunt ullam magnam quasi saepe, reiciendis id
-      eligendi quas harum quidem repellat maxime, illo cumque at perferendis
-      error libero repudiandae? Dolor vero temporibus at, perferendis unde
-      rerum? Dolores, corrupti explicabo. Voluptate neque quam repellendus
-      numquam, earum at tempore explicabo doloremque assumenda itaque aliquid.
-      Optio impedit dolorem veritatis tempore reprehenderit consequatur est
-      vitae ad a! Incidunt iste corrupti dolore nam impedit eum maxime, laborum
-      accusamus molestiae doloribus. Saepe consequuntur molestias sit
-      praesentium. Labore eius id minima fuga? Officiis fugit quisquam quis in,
-      sequi ad inventore tempora maiores ratione, exercitationem sapiente
-      facere. Rem ut veritatis cum magni explicabo voluptates ipsum adipisci
-      tempora. Accusantium voluptates modi minus, amet deleniti repudiandae ea
-      assumenda.
+    <div className="container d-flex justify-content-center align-items-center aboutContainer">
+      <img src={github} alt="github" className="github text-primary" />
+      <p className="mt-4 fw-bold">Coded and published by Ahmet Eren Yilmaz</p>
+      <div className="d-flex justify-content-around">
+        <a href="https://github.com/ahmmeetteren">
+          <i className="fa-brands fa-github fs-1 mx-2"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ahmmeetteren/">
+          <i className="fa-brands fa-linkedin-in fs-1 mx-2"></i>
+        </a>
+        <a href="https://www.instagram.com/ahmmeetteren/">
+          <i className="fa-brands fa-instagram fs-1 mx-2"></i>
+        </a>
+      </div>
     </div>
   );
 }

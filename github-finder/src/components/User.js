@@ -7,9 +7,12 @@ function User({ user }) {
       <div className="card mt-2">
         <img src={user.avatar_url} alt="" className="img-fluid" />
         <div className="card-body">
-          <p className="card-text">{user.login}</p>
-          <Link to={`/user/${user.login}`} className="btn btn-primary btn-sm">
-            Profile
+          <p className="card-text text-center">{user.login}</p>
+          <Link
+            to={`/user/${user.login}`}
+            className="btn btn-dark btn-sm w-100"
+          >
+            More
           </Link>
         </div>
       </div>

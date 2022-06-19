@@ -1,0 +1,17 @@
+.aboutContainer {
+  height: 88vh;
+  flex-direction: column;
+}
+.github {
+  width: 25%;
+  height: 25%;
+}
+.repoBorder {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+.detailImg {
+  border-radius: 50%;
+  padding: 10px;
+}
