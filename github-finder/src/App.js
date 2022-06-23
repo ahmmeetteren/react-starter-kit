@@ -8,6 +8,7 @@ import Users from "./components/Users";
 import About from "./components/About";
 import UserDetails from "./components/UserDetails";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NotFound from "./components/NotFound";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -56,6 +57,7 @@ function App() {
       <Navbar title="Github Finder" icon="fa-brands fa-github" />
       <Alert alert={alert} />
       <Routes>
+        <Route path="*" element={<NotFound />}></Route>
         <Route
           path="/"
           element={
